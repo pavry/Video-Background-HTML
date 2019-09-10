@@ -1,0 +1,101 @@
+/*
+	Author: Yury Nemets
+	Site: www.sitehere.ru
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300&subset=latin,cyrillic);
+
+body {
+    padding:0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.overlay h1 {
+    text-align:center;
+    color:#fff;
+    font-size: 70px;
+    margin-top:17%;
+}
+
+.fullscreen-bg {
+    overflow: hidden;
+    z-index: -100;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top:45%;
+}
+ 
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content h2 {
+	text-align: center;
+	font-size: 30px;
+}
+
+.content p {
+	text-align: justify;
+	font-size: 20px;
+}
+ 
+@media (max-width: 767px) {
+	.fullscreen-bg {
+		background: url('../images/plane.jpg') center center / cover no-repeat;
+	}
+
+	.fullscreen-bg__video {
+		display: none;
+	}
+
+	.overlay h1 {
+	    font-size: 40px;
+	}
+}
+
+/**/
+.backToSitehereBtn{
+	display: block;
+	width: 150px;
+	height: 150px;
+	background: #01BC78;
+	text-align: center;
+	line-height: 170px;
+	font-size: 20px;
+	border-radius: 50%;
+	color:#fff;
+	position: absolute;
+	text-decoration: none;
+	top:-40px;
+	left:-40px;
+	transform:rotate(-45deg) scale(1);
+	transition:all 0.25s linear;
+}
+
+.backToSitehereBtn:hover {
+	text-decoration: none;
+	top:-10px;
+	left:-10px;
+	transform:rotate(-45deg) scale(1.3);
+}
